@@ -1,19 +1,20 @@
 ﻿# include <Siv3D.hpp>
 
-#ifndef chara.h
-#define chara.h
+#ifndef _character_h
+#define _character_h
 
-	#include "chara.h"
+	#include "character.h"
 
 #endif
 
 void Main(){
 
-	chara Chara = new chara();
+	Character chara;
 
 	while (System::Update()){
 
 		Graphics3D::FreeCamera();
-		
+		chara.draw();
+
 	}
 }
