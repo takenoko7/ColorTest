@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="answer.cpp" />
     <ClCompile Include="character.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
@@ -128,6 +129,7 @@
     <Xml Include="engine\objdetect\facePhoto.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="answer.h" />
     <ClInclude Include="character.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

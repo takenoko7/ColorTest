@@ -16,16 +16,16 @@ void Character::draw(){	//•`‰æ
 }
 
 void Character::move(){	//ˆÚ“®
-	if (Input::KeyD.pressed){
+	if (Input::KeyRight.pressed){
 		x += 5;
 	}
-	if (Input::KeyA.pressed){
+	if (Input::KeyLeft.pressed){
 		x -= 5;
 	}
-	if (Input::KeyW.pressed){
+	if (Input::KeyUp.pressed){
 		y -= 5;
 	}
-	if (Input::KeyS.pressed){
+	if (Input::KeyDown.pressed){
 		y += 5;
 	}
 }
