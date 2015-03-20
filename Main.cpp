@@ -14,6 +14,7 @@ void Main(){
 	while (System::Update()){
 
 		Graphics3D::FreeCamera();
+		chara.move();
 		chara.draw();
 
 	}

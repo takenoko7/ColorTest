@@ -10,6 +10,22 @@ Character::Character(){
 	y = 0;
 }
 
-void Character::draw(){
-	Box(Vec3(0, 0, 0), 10, 10, 10).draw(Palette::Pink);
+void Character::draw(){	//•`‰æ
+	// À•W (100,100) ‚©‚ç • 60, ‚‚³ 60 ‚Ì³•ûŒ`‚ğ•`‚­
+	Rect(x, y, 60, 60).draw( Palette::White );
+}
+
+void Character::move(){	//ˆÚ“®
+	if (Input::KeyD.pressed){
+		x += 5;
+	}
+	if (Input::KeyA.pressed){
+		x -= 5;
+	}
+	if (Input::KeyW.pressed){
+		y -= 5;
+	}
+	if (Input::KeyS.pressed){
+		y += 5;
+	}
 }

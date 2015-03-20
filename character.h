@@ -7,7 +7,8 @@ class Character{
 		int y;
 
 		void draw();
+		void move();
 
-		Character();
+		Character();	//コンストラクタ
 
 };
