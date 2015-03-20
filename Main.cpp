@@ -20,6 +20,12 @@ void Main(){
 	Answer answer;
 	const Font font(30);
 
+	if (!Midi::Open(L"Example/ColorTest.mid")){
+		return;
+	}
+
+	Midi::PlayLoop();	// ループ再生する
+
 	while (System::Update()){
 
 		Graphics3D::FreeCamera();
