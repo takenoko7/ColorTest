@@ -9,3 +9,5 @@ void Main()
 		Box(Vec3(0, 0, 0), 10, 10, 10).draw(Palette::Pink);
 	}
 }
+
+//あああああああああああああああああ
