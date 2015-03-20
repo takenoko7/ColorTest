@@ -5,7 +5,7 @@
 
 #endif
 
-Answer::Answer(){
+Answer::Answer(){	//コンストラクタ
 	x = 540;
 	y = 380;
 	width = 60;
