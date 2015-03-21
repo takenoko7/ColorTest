@@ -1,5 +1,6 @@
 ﻿# include <Siv3D.hpp>
 
+
 #ifndef _character_h
 #define _character_h
 
@@ -14,21 +15,37 @@
 
 #endif
 
+#ifndef _SELECT_COLOR_H
+#define _SELECT_COLOR_H
+
+#include "select_color.h"
+
+#endif
+
 void Main(){
 
 	Character chara;
 	Answer answer;
+	SelectColor color[3];
 	const Font font(30);
 
+	//音楽再生
 	if (!Midi::Open(L"Example/ColorTest.mid")){
 		return;
 	}
+	Midi::PlayLoop();
 
-	Midi::PlayLoop();	// ループ再生する
+	//SelectColorのインスタンス化
+	for(int i = 0; i < 3; i++){
+		new(color + i) SelectColor(i*Window::Width()/3+70, 150, i);
+	}
 
 	while (System::Update()){
 
-		Graphics3D::FreeCamera();
+		for (auto i : color){
+			i.draw();
+		}
+
 		chara.move();
 		chara.draw();
 

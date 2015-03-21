@@ -1,4 +1,4 @@
-#ifndef _character_c
+#ifndef _character_h
 #define _character_h
 
 #include "character.h"
