@@ -10,9 +10,10 @@ Answer::Answer(){	//コンストラクタ
 	y = 380;
 	width = 60;
 	height = 60;
+	font(30);
 }
 
-void Answer::draw(Font font){	//描画
+void Answer::draw(){	//描画
 	
 	// 座標 (x,y) から 幅 60, 高さ 60 の正方形を描く
 	Rect(x, y, 60, 60).draw(Palette::White);

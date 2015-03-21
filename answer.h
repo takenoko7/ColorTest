@@ -4,7 +4,7 @@ class Answer{
 
 public:
 
-	void draw(Font);
+	void draw();
 
 	Answer();	//コンストラクタ
 
@@ -14,6 +14,7 @@ private:
 	int y;
 	int height;
 	int width;
+	Font font;
 
 	bool ans;
 

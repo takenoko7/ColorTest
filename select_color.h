@@ -11,10 +11,8 @@ public:
 	SelectColor(int x, int y, int color);
 	void draw();
 private:
-	int x;
-	int y;
-	int width;
-	int height;
+	Rect rect;
+	int size;
 	int color; //©•ª‚ª‚Á‚Ä‚¢‚éF‚ÌID 0:r, 1:g, 2:b
 
 };

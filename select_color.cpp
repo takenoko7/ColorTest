@@ -7,24 +7,19 @@
 
 SelectColor::SelectColor(int x, int y, int color){
 
-	SelectColor::x = x;
-	SelectColor::y = y;
 	SelectColor::color = color;
-	width = 60;
-	height = 60;
+	rect.set(x, y, size, size);
 
 }
 
 SelectColor::SelectColor(){
-	x = 0;
-	y = 0;
+	size = 60;
 	color = 0;
-	width = 0;
-	height = 0;
 }
 
 void SelectColor::draw(){
 
-	Rect(x, y, width, height).draw(color == RED ? Palette::Red : color == GREEN ? Palette::Green : Palette::Blue);
+	rect.drawShadow({ 5, 5 }, 24.0, 10);
+	rect.draw(color == RED ? Palette::Red : color == GREEN ? Palette::Green : Palette::Blue);
 
 }

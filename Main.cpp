@@ -27,7 +27,6 @@ void Main(){
 	Character chara;
 	Answer answer;
 	SelectColor color[3];
-	const Font font(30);
 
 	//音楽再生
 	if (!Midi::Open(L"Example/ColorTest.mid")){
@@ -49,7 +48,7 @@ void Main(){
 		chara.move();
 		chara.draw();
 
-		answer.draw(font);
+		answer.draw();
 
 	}
 }
