@@ -47,6 +47,7 @@ void Main(){
 
 		chara.move();
 		chara.draw();
+		chara.intersect( chara, color[0].getRect(), color[1].getRect(), color[2].getRect() );
 
 		answer.draw();
 

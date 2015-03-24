@@ -23,3 +23,7 @@ void SelectColor::draw(){
 	rect.draw(color == RED ? Palette::Red : color == GREEN ? Palette::Green : Palette::Blue);
 
 }
+
+Rect SelectColor::getRect(){
+	return rect;
+}
