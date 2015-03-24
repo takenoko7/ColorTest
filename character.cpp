@@ -27,16 +27,16 @@ void Character::draw(){	//描画
 }
 
 void Character::move(){	//移動
-	if (Input::KeyRight.pressed){
+	if ( Input::KeyRight.pressed && x < 581 ){
 		x += 5;
 	}
-	if (Input::KeyLeft.pressed){
+	if ( Input::KeyLeft.pressed && x > -1){
 		x -= 5;
 	}
-	if (Input::KeyUp.pressed){
+	if ( Input::KeyUp.pressed && y > -1){
 		y -= 5;
 	}
-	if (Input::KeyDown.pressed){
+	if ( Input::KeyDown.pressed && y < 421 ){
 		y += 5;
 	}
 	if (Input::KeySpace.pressed){	//space押すと色リセット
