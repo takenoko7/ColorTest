@@ -13,12 +13,16 @@ Character::Character(){
 	g = 0;
 	b = 0;
 
+	player.setPos(x, y);
+	player.setSize(width, height);
+
 	font(30);
 }
 
 void Character::draw(){	//•`‰æ
 	// À•W (100,100) ‚©‚ç • 60, ‚‚³ 60 ‚Ì³•ûŒ`‚ğ•`‚­
-	Rect(x, y, 60, 60).draw( Color(r, g, b) );
+	player.setPos(x, y);
+	player.draw( Color(r, g, b) );
 }
 
 void Character::move(){	//ˆÚ“®
@@ -39,9 +43,7 @@ void Character::move(){	//ˆÚ“®
 	}
 }
 
-void Character::intersect(Character chara, Rect rect1, Rect rect2, Rect rect3){	//‚ ‚½‚è”»’è
-
-	const Rect player(chara.x, chara.y, 60, 60);
+void Character::intersect(Rect rect1, Rect rect2, Rect rect3){	//‚ ‚½‚è”»’è
 
 	if (player.intersects(rect1)){
 		font(L"red intersects!!").draw(0, 0, Palette::White);

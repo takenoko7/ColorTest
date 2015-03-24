@@ -6,6 +6,9 @@ class Character{
 		int x;
 		int y;
 
+		int width = 60;
+		int height = 60;
+
 		int r;
 		int g;
 		int b;
@@ -14,8 +17,11 @@ class Character{
 
 		void draw();
 		void move();
-		void intersect(Character chara, Rect rect1, Rect rect2, Rect rect3);
+		void intersect(Rect rect1, Rect rect2, Rect rect3);
 
 		Character();	//コンストラクタ
+
+private :
+	Rect player;
 
 };
