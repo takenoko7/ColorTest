@@ -52,7 +52,7 @@ void Main(){
 		chara.draw();
 		chara.intersect( color[0].getRect(), color[1].getRect(), color[2].getRect() );
 
-		//answer.draw();
+		answer.draw();
 
 	}
 }

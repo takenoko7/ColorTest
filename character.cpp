@@ -21,6 +21,7 @@ Character::Character(){
 
 void Character::draw(){	//•`‰æ
 	// À•W (100,100) ‚©‚ç • 60, ‚‚³ 60 ‚Ì³•ûŒ`‚ğ•`‚­
+	player.drawShadow({ 5, 5 }, 24.0, 10);
 	player.setPos(x, y);
 	player.draw( Color(r, g, b) );
 }

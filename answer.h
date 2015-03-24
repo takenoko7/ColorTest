@@ -14,6 +14,7 @@ private:
 	int y;
 	int height;
 	int width;
+	Rect rect;
 	Font font;
 
 	bool ans;
