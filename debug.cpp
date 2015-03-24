@@ -13,7 +13,7 @@ Debugger::Debugger(){
 	greenFrame.set(60, 10, 10, 120);
 }
 
-void Debugger::draw(){	//ÉQÅ[ÉWï`âÊ
+void Debugger::draw(){	//ÉQÅ[ÉW
 	redFrame.drawFrame( 0, 5, Palette::Red );
 	blueFrame.drawFrame(0, 5, Palette::Blue);
 	greenFrame.drawFrame(0, 5, Palette::Green);
