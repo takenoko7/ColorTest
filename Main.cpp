@@ -28,6 +28,9 @@ void Main(){
 	Answer answer;
 	SelectColor color[3];
 
+	//背景色設定
+	Graphics::SetBackground(Palette::White);
+
 	//音楽再生
 	if (!Midi::Open(L"Example/ColorTest.mid")){
 		return;
@@ -49,7 +52,7 @@ void Main(){
 		chara.draw();
 		chara.intersect( chara, color[0].getRect(), color[1].getRect(), color[2].getRect() );
 
-		answer.draw();
+		//answer.draw();
 
 	}
 }
