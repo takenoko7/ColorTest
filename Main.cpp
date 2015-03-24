@@ -22,11 +22,20 @@
 
 #endif
 
+#ifndef _debug_h
+#define _debug_h
+
+#include "debug.h"
+
+#endif
+
 void Main(){
 
 	Character chara;
 	Answer answer;
 	SelectColor color[3];
+
+	Debugger debugger;	//デバッグ用クラスをインスタンス化
 
 	//背景色設定
 	Graphics::SetBackground(Palette::White);
@@ -47,6 +56,9 @@ void Main(){
 		for (auto i : color){
 			i.draw();
 		}
+
+		debugger.check( chara );
+		debugger.draw();
 
 		chara.move();
 		chara.draw();
