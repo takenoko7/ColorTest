@@ -22,10 +22,10 @@
 
 #endif
 
-#ifndef _debug_h
-#define _debug_h
+#ifndef _debugger_h
+#define _debugger_h
 
-#include "debug.h"
+#include "debugger.h"
 
 #endif
 

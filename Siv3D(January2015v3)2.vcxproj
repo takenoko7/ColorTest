@@ -13,7 +13,7 @@
   <ItemGroup>
     <ClCompile Include="answer.cpp" />
     <ClCompile Include="character.cpp" />
-    <ClCompile Include="debug.cpp" />
+    <ClCompile Include="debugger.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="select_color.cpp" />
   </ItemGroup>
@@ -133,7 +133,7 @@
   <ItemGroup>
     <ClInclude Include="answer.h" />
     <ClInclude Include="character.h" />
-    <ClInclude Include="debug.h" />
+    <ClInclude Include="debugger.h" />
     <ClInclude Include="select_color.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
