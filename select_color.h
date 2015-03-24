@@ -8,6 +8,7 @@ class SelectColor{
 
 public:
 	SelectColor();
+	//SelectColor(x座標, y座標, 色ID) ...色ID 0=red, 1=green, 2=blue
 	SelectColor(int x, int y, int color);
 	void draw();
 private:
